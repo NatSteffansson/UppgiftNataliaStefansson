@@ -9,10 +9,11 @@ public class Main {
         // konstruktor
         System.out.println("In the next line you can write something. In order to stop the program type 'stop'.");
         System.out.println("Enter something: ");
-        while (!processor.isStopLoop()) {//vi använder while loop för att läsa in input från användare så länge
+        while (!processor.isStopLoop()) {
+            //vi använder while loop för att läsa in input från användare så länge
             //som vårt villkor är sant. '!' framför vår loop betyder motsats
             String input = scanner.nextLine();
-            processor.processInput(input); //här kallar vi på vår metod och bearbetar input.
+            processor.processInput(input); //här kallar vi på vår metod och bearbetar input. Vi har inparameter input.
         }
         System.out.println("The number of lines is: " + processor.getNumberLines());
         System.out.println("The number of characters is: " + processor.getNumberCharacters());
