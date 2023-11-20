@@ -33,11 +33,11 @@ public class Tests {
     public void testNumberLines() {
         //Assign
         TextProcessor testProcessor = new TextProcessor();
-        int expected = 3;
+        int expected = 2;
         //Act
         testProcessor.processInput("hej");
-        testProcessor.processInput("på");
-        testProcessor.processInput("dig");
+        testProcessor.processInput("på dig");
+        testProcessor.processInput("stop");
         int actual = testProcessor.getNumberLines();
         //Assert
         assertEquals(expected, actual);
