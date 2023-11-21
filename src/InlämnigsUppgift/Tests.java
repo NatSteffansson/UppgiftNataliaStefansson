@@ -9,10 +9,10 @@ public class Tests {
     public void testIsStopLoop () {
         //Assign
         TextProcessor testProcessor = new TextProcessor();
-        boolean actual = true;
+        boolean expected = true;
         //Act
         testProcessor.processInput("stop");
-        boolean expected = true;
+        boolean actual = testProcessor.isStopLoop();
         //Assert
         assertEquals(expected,actual);
     }
@@ -20,15 +20,13 @@ public class Tests {
     public void testLongestWord() {
         //Assign
         TextProcessor testProcessor = new TextProcessor();
-        String actual = "krokodil";
+        String expected = "krokodil";
         //Act
         testProcessor.processInput("hej" + " " + "krokodil");
-        String expected = testProcessor.getLongestWord();
+        String actual = testProcessor.getLongestWord();
         //Assert
         assertEquals(expected, actual);
-
     }
-
     @Test
     public void testNumberLines() {
         //Assign

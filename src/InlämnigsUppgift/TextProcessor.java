@@ -27,11 +27,9 @@ public class TextProcessor {
             }
         }
     }
-
     public boolean isStopLoop() {
         return isStopLoop;
     }
-
     public String getLongestWord() {
         return longestWord;
     }
